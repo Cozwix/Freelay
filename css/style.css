@@ -1,0 +1,252 @@
+:root {
+    --first: #eeeeee;
+    --second: #00adb5;
+    --third: #3a4750;
+    --fourth: #303841;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #491515ff;
+    border-radius: 15px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(73, 21, 21, 0.507);
+}
+
+body {
+    margin: 0px;
+    background-color: whitesmoke;
+    color: #491515ff;
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 0px;
+    font-weight: 200;
+    background-image: url("https://hdwallpaperim.com/wp-content/uploads/2017/08/25/466304-landscape-abstract-red-mountains-Photoshop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.sidebar-r {
+    float: right;
+    width: 20vw;
+    height: 99vh;
+    background-color: rgb(231, 231, 231);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 10px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.561);
+    backdrop-filter: blur(30px);
+}
+
+.sidebar-l {
+    float: left;
+    width: 20vw;
+    height: 99vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow-y: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    padding: 10px 20px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.561);
+    backdrop-filter: blur(30px);
+}
+
+.paper {
+    width: 45%;
+    min-height: 75vh;
+    background: rgba(255, 255, 255, 0.561);
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    z-index: 1;
+    backdrop-filter: blur(30px);
+}
+
+.sidebar-item {
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.4s ease;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.52);
+}
+
+.sidebar-item>img {
+    width: 100%;
+    height: auto;
+}
+
+.sidebar-item>p {
+    text-align: left;
+    color: rgb(61, 61, 61);
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 0px;
+}
+
+hr {
+    margin: 5px 20px;
+    border: none;
+    height: 6px;
+    border-radius: 7px;
+    background-color: #491515ff;
+}
+
+#html_of_page {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.13);
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 40%;
+    outline: none;
+}
+
+#css_of_page {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 40%;
+    outline: none;
+}
+
+.tab-area {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+}
+
+.tab {
+    width: fit-content;
+    margin: 0px;
+    border: none;
+    padding: 0px 20px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.493);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.tab:hover {
+    width: fit-content;
+    margin: 0px;
+    border: none;
+    padding: 0px 20px;
+    height: 100%;
+    background-color: rgba(54, 54, 54, 0);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+    color: #491515ff;
+}
+
+.tab-active {
+    width: fit-content;
+    margin: 0px;
+    border: none;
+    padding: 0px 20px;
+    height: 100%;
+    background-color: rgba(73, 21, 21, 0.644);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+    color: white;
+}
+
+input {
+    border: 1px solid #491515ff;
+    border-radius: 2px;
+    background-color: transparent;
+    outline: none;
+    padding: 5px;
+    width: 95%;
+}
+
+.comp-area {
+    width: 75vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.561);
+    backdrop-filter: blur(30px);
+    margin: auto;
+    margin-top: 7vh;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.comp-item {
+    width: 30%;
+    height: 50%;
+    margin: 10px auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.315);
+    transition: all 0.4s ease;
+}
+
+.comp-item:hover {
+    background-color: rgba(255, 255, 255, 0.52);
+}
+
+.comp-item>p {
+    text-align: left;
+    color: rgb(61, 61, 61);
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 0px;
+}
